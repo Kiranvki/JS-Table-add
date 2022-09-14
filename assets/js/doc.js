@@ -1,7 +1,6 @@
 var id = null;
 
-function onFormSubmit(e) {
-    e.preventDefault();
+function onFormSubmit() {
     var firstname = document.getElementById("fname").value;
     var msg = document.getElementById("msg");
     var mob = document.getElementById("mob").value;
