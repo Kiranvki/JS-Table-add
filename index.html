@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style6.css">
+    <!-- <script src="assets/js/valid.js" type="text/javascript"></script> -->
+    <script src="assets/js/doc.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a9545f17e8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <h1>FORM</h1>
+        <form class="formContainer" autocomplete="off">
+            <div>
+                <label for="" class="label">Name</label><br>
+                <input type="text" id="fname" class="input" name="fname" value="">
+                <p id="msg"></p>
+            </div>
+            <div>
+                <label for="" class="label">Mobile Number</label><br>
+                <input type="number" id="mob" class="input" name="lname" min="0" max="10">
+                <p id="msg1"></p>
+            </div>
+            <div>
+                <label for="" class="label">Alt Mobile Number</label><br>
+                <input type="number" id="alt" class="input" name="alt" min="0" max="10">
+                <p id="msg2"></p>
+            </div>
+            <div class="radio">
+                <input type="radio" id="gender" name="gender" value="male">Male
+                <input type="radio" id="gender" name="gender" value="female">Female
+            </div>
+            <div class="select">
+                <select name="" id="countySel">
+                    <option value="" selected="selected">Select Country</option>
+                </select>
+                <select name="" id="stateSel">
+                    <option value="" selected="selected">Select State</option>
+                </select>
+                <select name="" id="districtSel">
+                    <option value="" selected="selected">Select City</option>
+                </select>
+                <p id="msg3"></p>
+            </div>
+            <div class="btn">
+                <input type="button" value="submit" onclick="onFormSubmit()">
+                <input type="reset" value="reset" onclick="onReset()">
+            </div>
+            <div>
+                <button type="button" onclick=""><i class="fa-solid fa-download fa-2x"></i></button>
+                <br><br>
+                <p>Save in PDF Formate</p>
+            </div>
+        </form>
+    </section>
+    <section class="container2">
+        <table border="2" class="tableContainer" id="store_list">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Mobile N0</th>
+                    <th>Alt Mobile No</th>
+                    <th colspan="2">Options</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr aria-disabled="true">
+                    <td>Kiran</td>
+                    <td>9066686215</td>
+                    <td>9066686216</td>
+                    <td><button id="btn1">Edit</button></td>
+                    <td><button id="btn2">Delete</button></td>
+                    <td>Male</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+
+
+</html>
